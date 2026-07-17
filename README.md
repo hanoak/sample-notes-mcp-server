@@ -1,0 +1,1 @@
+# sample-notes-mcp-server
