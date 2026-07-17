@@ -1,0 +1,8 @@
+{
+  // Build config: emits the publishable server only. The smoke test is a
+  // dev-time file, so it's excluded here and never lands in dist/ (and thus
+  // never in the npm tarball). Editor tooling still uses tsconfig.json, which
+  // includes it — so process/imports resolve there.
+  "extends": "./tsconfig.json",
+  "exclude": ["node_modules", "dist", "src/smoke-test.ts"]
+}
